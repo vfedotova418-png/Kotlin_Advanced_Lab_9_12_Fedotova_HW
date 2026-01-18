@@ -31,4 +31,10 @@ fun main() {
     reports.forEach { generator ->
         println(generator.generateReport())
     }
+
+    println("==================")
+
+    println("Назначаем задачу сотруднику:")
+    employee.assignTask(task1)
+    println(employee.generateReport())
 }
