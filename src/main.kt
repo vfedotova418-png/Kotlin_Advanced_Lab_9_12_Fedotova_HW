@@ -3,6 +3,8 @@ fun main() {
     employee.salary = -100
     employee.yearsOfExperience = 56
 
+    println("==================")
+
     val task1 = Task("Organize files", "Organize all files into folders", priority = Priority.LOW ,isCompleted = false)
     val task2 = Task("Organize files", "Organize all files into folders", priority = Priority.LOW ,isCompleted = false)
     val task3 = Task("Organize files", "Organize all files into folders", priority = Priority.MEDIUM ,isCompleted = false)
@@ -11,4 +13,11 @@ fun main() {
     println(task1.hashCode())
     println(task3.copy(priority = Priority.HIGH))
     println(task2.toString())
+
+    println("==================")
+
+    val dep1: DevelopmentDepartment = DevelopmentDepartment()
+    val dep2: TestingDepartment = TestingDepartment()
+    dep1.printDepartmentGoal()
+    dep2.printDepartmentGoal()
 }
