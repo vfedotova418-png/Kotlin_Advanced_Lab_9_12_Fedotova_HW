@@ -20,4 +20,15 @@ fun main() {
     val dep2: TestingDepartment = TestingDepartment()
     dep1.printDepartmentGoal()
     dep2.printDepartmentGoal()
+
+    println("==================")
+
+    val reports: List<ReportGenerator> = listOf(
+        employee,
+        dep1
+    )
+
+    reports.forEach { generator ->
+        println(generator.generateReport())
+    }
 }
