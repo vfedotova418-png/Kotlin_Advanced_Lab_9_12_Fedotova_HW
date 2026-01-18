@@ -25,9 +25,3 @@ class Employee(
             field = value
         }
 }
-
-fun main() {
-    val employee: Employee = Employee("john doe", "developer", 50000, 5)
-    employee.salary = -100
-    employee.yearsOfExperience = 56
-}
